@@ -1,0 +1,19 @@
+# Quantum Geostatistics and Artificial Intelligence - Python requirements
+# Tested with Python 3.10 to 3.12. Install with:  pip install -r requirements.txt
+#
+# --- core scientific stack (library qgeo.py, notebooks, test) ---
+numpy>=1.24,<3
+scipy>=1.10
+scikit-learn>=1.2
+matplotlib>=3.7
+# --- quantum simulation (feature map, fidelity kernel; reference implementation) ---
+qutip>=5.0
+# --- geostatistical cross-check of the variogram estimator (optional in the notebook, guarded by try/except) ---
+gstools>=1.5
+# --- notebooks: execution, kernel and figure export (JPEG at 1000 dpi via matplotlib/Pillow) ---
+jupyter>=1.0
+notebook>=7.0
+ipykernel>=6.0
+nbformat>=5.7
+nbconvert>=7.0
+pillow>=9.0
